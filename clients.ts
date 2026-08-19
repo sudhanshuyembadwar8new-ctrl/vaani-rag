@@ -42,8 +42,15 @@ export async function transcribeWithSarvam(input: { audio: Buffer; mimeType: str
   const key = configured("SARVAM_API_KEY", "Sarvam speech-to-text");
   return retry("Sarvam transcription", async () => {
     const form = new FormData();
-    const bytes = Uint8Array.from(input.audio);
-    form.append("file", new Blob([bytes.buffer], { type: input.mimeType }), "vaani-capture.webm");
+    // IMPORTANT: input.audio is a Node.js Buffer which shares a pooled ArrayBuffer
+    // under the hood. Using `bytes.buffer` directly would send the entire pool
+    // (filled with zeroes beyond the real data), causing Sarvam to reject the
+    // upload as a malformed/corrupt file (HTTP 400). We must slice the underlying
+    // ArrayBuffer to exactly the bytes that belong to this audio payload.
+    const buf = input.audio;
+    const audioBytes = buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength);
+    const ext = input.mimeType.includes("wav") ? "wav" : "webm";
+    form.append("file", new Blob([audioBytes], { type: input.mimeType }), `vaani-capture.${ext}`);
     form.append("model", "saaras:v4");
     form.append("language_code", input.languageCode || "unknown");
     form.append("with_timestamps", "true");
