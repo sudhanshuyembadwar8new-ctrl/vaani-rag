@@ -10,6 +10,7 @@
 [![Sarvam](https://img.shields.io/badge/STT-Sarvam%20Saaras%20V4-FF7700?style=flat-square)](./)
 [![Event](https://img.shields.io/badge/Hacker%20House-Goa%202026-34D399?style=flat-square)](#)
 
+live :- https://vaani-rag.onrender.com
 ---
 
 ## 📌 Overview
