@@ -1,0 +1,84 @@
+{
+  "outcome": "refused",
+  "transcript": "Who won the FIFA World Cup in 2026?",
+  "answer": null,
+  "refusalReason": "The provided evidence does not contain any information about the FIFA World Cup 2026 winner.",
+  "citations": [],
+  "sources": [
+    {
+      "id": "mr-IN:validation:12:validation:0",
+      "language": "mr-IN",
+      "similarity": 0.546115517616272,
+      "content": "Question: प्रदूषणामुळे मानवी लोकसंख्या कशी वाढते Evidence: कायमचे कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी का"
+    },
+    {
+      "id": "ta-IN:validation:12:validation:0",
+      "language": "ta-IN",
+      "similarity": 0.5438072681427002,
+      "content": "Question: மாசுபாடு மனித மக்கள்தொகையை எப்படி அதிகரிக்கிறது Evidence: Worldwide, population is seven billion. Projections are that population in the United States will reach 400 million by 2050 – a 33 percent increase in roughly 40 years’ time; the U.S. registered its 300 millionth resident in 2006. With an increase in world population has come an increase in air pollution."
+    },
+    {
+      "id": "te-IN:validation:12:validation:0",
+      "language": "te-IN",
+      "similarity": 0.5325748324394226,
+      "content": "Question: కాలుష్యం మానవ జనాభాను ఎలా పెంచుతుంది Evidence: Worldwide, population is seven billion. Projections are that population in the United States will reach 400 million by 2050 – a 33 percent increase in roughly 40 years’ time; the U.S. registered its 300 millionth resident in 2006. With an increase in world population has come an increase in air pollution."
+    }
+  ],
+  "totalMs": 6687,
+  "stages": [
+    {
+      "name": "transcribing",
+      "status": "complete",
+      "startedAt": 1786974005392,
+      "completedAt": 1786974009234,
+      "durationMs": 3842,
+      "retries": 0,
+      "detail": "Detected en-IN."
+    },
+    {
+      "name": "embedding",
+      "status": "complete",
+      "startedAt": 1786974009235,
+      "completedAt": 1786974009557,
+      "durationMs": 322,
+      "retries": 0,
+      "detail": "Gemini query vector returned."
+    },
+    {
+      "name": "retrieving",
+      "status": "complete",
+      "startedAt": 1786974009557,
+      "completedAt": 1786974009566,
+      "durationMs": 9,
+      "retries": 0,
+      "detail": "7 HNSW candidates returned."
+    },
+    {
+      "name": "generating",
+      "status": "complete",
+      "startedAt": 1786974009566,
+      "completedAt": 1786974011861,
+      "durationMs": 2295,
+      "retries": 0,
+      "detail": "Structured, source-cited answer returned."
+    },
+    {
+      "name": "verifying",
+      "status": "refused",
+      "startedAt": 1786974011861,
+      "completedAt": 1786974012079,
+      "durationMs": 218,
+      "retries": 0,
+      "detail": "The provided evidence does not contain any information about the FIFA World Cup 2026 winner."
+    },
+    {
+      "name": "answered",
+      "status": "refused",
+      "startedAt": 1786974012079,
+      "completedAt": 1786974012079,
+      "durationMs": 0,
+      "retries": 0,
+      "detail": "Post-generation groundedness gate refused the answer."
+    }
+  ]
+}

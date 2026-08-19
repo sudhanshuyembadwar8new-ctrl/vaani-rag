@@ -1,0 +1,864 @@
+{
+  "generatedAt": "2026-08-16T16:52:56.323Z",
+  "source": "Distinct metadata.sourceQuery values from the persisted MSMARCO-XI index",
+  "requested": 50,
+  "completed": 46,
+  "errors": 4,
+  "delayMs": 18000,
+  "totals": {
+    "samples": 46,
+    "p50": 5884,
+    "p70": 7037,
+    "p100": 29005
+  },
+  "ragCore": {
+    "samples": 46,
+    "p50": 5629,
+    "p70": 6818,
+    "p100": 28762
+  },
+  "stages": {
+    "transcribing": {
+      "samples": 0,
+      "p50": null,
+      "p70": null,
+      "p100": null
+    },
+    "embedding": {
+      "samples": 46,
+      "p50": 252,
+      "p70": 269,
+      "p100": 314
+    },
+    "retrieving": {
+      "samples": 46,
+      "p50": 0,
+      "p70": 0,
+      "p100": 1
+    },
+    "generating": {
+      "samples": 46,
+      "p50": 5337,
+      "p70": 6552,
+      "p100": 28516
+    },
+    "guardrailVerification": {
+      "samples": 46,
+      "p50": 243,
+      "p70": 268,
+      "p100": 378
+    }
+  },
+  "samples": [
+    {
+      "index": 1,
+      "question": "कॉर्पोरेशन क्या है?",
+      "startedAt": "2026-08-16T16:30:38.587Z",
+      "outcome": "answered",
+      "totalMs": 5953,
+      "ragCoreMs": 5651,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 314,
+        "retrieving": 0,
+        "generating": 5337,
+        "verifying": 301,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 2,
+      "question": "रेचल कार्सन ने क्यों एक दायित्व बर्दाश्त करने के लिए लिखा",
+      "startedAt": "2026-08-16T16:31:02.555Z",
+      "outcome": "answered",
+      "totalMs": 21301,
+      "ragCoreMs": 21017,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 266,
+        "retrieving": 0,
+        "generating": 20751,
+        "verifying": 284,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 3,
+      "question": "पोटेशियम में कम खाद्य पदार्थों का चार्ट।",
+      "startedAt": "2026-08-16T16:31:41.870Z",
+      "outcome": "answered",
+      "totalMs": 5673,
+      "ragCoreMs": 5450,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 264,
+        "retrieving": 0,
+        "generating": 5186,
+        "verifying": 223,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 4,
+      "question": "मालवाहक जहाज़ के नीचे की तरफ",
+      "startedAt": "2026-08-16T16:32:05.557Z",
+      "outcome": "answered",
+      "totalMs": 18389,
+      "ragCoreMs": 18074,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 291,
+        "retrieving": 0,
+        "generating": 17783,
+        "verifying": 314,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 5,
+      "question": "ईमानदारी या सच्चाई की परिभाषा",
+      "startedAt": "2026-08-16T16:32:41.950Z",
+      "outcome": "answered",
+      "totalMs": 29005,
+      "ragCoreMs": 28762,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 246,
+        "retrieving": 0,
+        "generating": 28516,
+        "verifying": 243,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 6,
+      "question": "लिंकन में अब वायुमंडलीय दबाव क्या है?",
+      "startedAt": "2026-08-16T16:33:28.969Z",
+      "outcome": "answered",
+      "totalMs": 4218,
+      "ragCoreMs": 4042,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 225,
+        "retrieving": 0,
+        "generating": 3817,
+        "verifying": 176,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 7,
+      "question": "स्ट्रूथर्स शहर स्कूल जिला राज्य संख्या",
+      "startedAt": "2026-08-16T16:33:51.200Z",
+      "outcome": "refused",
+      "totalMs": 6130,
+      "ragCoreMs": 5894,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 269,
+        "retrieving": 0,
+        "generating": 5625,
+        "verifying": 236,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 8,
+      "question": "क्या चिकित्सीय मारिजुआना मदत करता है?",
+      "startedAt": "2026-08-16T16:34:15.344Z",
+      "outcome": "refused",
+      "totalMs": 4921,
+      "ragCoreMs": 4608,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 236,
+        "retrieving": 0,
+        "generating": 4372,
+        "verifying": 313,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 9,
+      "question": "फ्रैंक गिफोर्ड ने कितनी महिलाओं से शादी की",
+      "startedAt": "2026-08-16T16:34:38.281Z",
+      "outcome": "answered",
+      "totalMs": 6866,
+      "ragCoreMs": 6613,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 262,
+        "retrieving": 0,
+        "generating": 6351,
+        "verifying": 253,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 10,
+      "question": "कितनी ट्रम्प प्रशासन की जांच चल रही हैं",
+      "startedAt": "2026-08-16T16:35:03.162Z",
+      "outcome": "answered",
+      "totalMs": 3128,
+      "ragCoreMs": 2977,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 236,
+        "retrieving": 0,
+        "generating": 2741,
+        "verifying": 151,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 11,
+      "question": "वॉव पर अनुयायियों को कैसे इकट्ठा किया जाए, इसका मार्गदर्शक",
+      "startedAt": "2026-08-16T16:35:24.304Z",
+      "outcome": "error",
+      "error": "This operation was aborted"
+    },
+    {
+      "index": 12,
+      "question": "ज़ेल्स कितने समय तक दूर रहना पड़ता है",
+      "startedAt": "2026-08-16T16:36:12.742Z",
+      "outcome": "answered",
+      "totalMs": 19032,
+      "ragCoreMs": 18752,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 276,
+        "retrieving": 0,
+        "generating": 18476,
+        "verifying": 280,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 13,
+      "question": "प्रदूषण के कारण मानव आबादी कैसे बढ़ती है",
+      "startedAt": "2026-08-16T16:36:49.788Z",
+      "outcome": "refused",
+      "totalMs": 5529,
+      "ragCoreMs": 5277,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 274,
+        "retrieving": 0,
+        "generating": 5003,
+        "verifying": 252,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 14,
+      "question": "कॉर्पोरेशन म्हणजे काय?",
+      "startedAt": "2026-08-16T16:37:13.330Z",
+      "outcome": "answered",
+      "totalMs": 6408,
+      "ragCoreMs": 6188,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 240,
+        "retrieving": 0,
+        "generating": 5948,
+        "verifying": 220,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 15,
+      "question": "रॅचेल कार्सनला काय करावे लागले असे लिहिले गेले का?",
+      "startedAt": "2026-08-16T16:37:37.751Z",
+      "outcome": "answered",
+      "totalMs": 5996,
+      "ragCoreMs": 5738,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 277,
+        "retrieving": 0,
+        "generating": 5461,
+        "verifying": 258,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 16,
+      "question": "पोटॅशियमचे प्रमाण कमी असलेल्या खाद्यपदार्थांचा तक्ता.",
+      "startedAt": "2026-08-16T16:38:01.761Z",
+      "outcome": "answered",
+      "totalMs": 16237,
+      "ragCoreMs": 16005,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 264,
+        "retrieving": 0,
+        "generating": 15741,
+        "verifying": 231,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 17,
+      "question": "मालवाहू जहाजाच्या तळाशी समोर",
+      "startedAt": "2026-08-16T16:38:36.012Z",
+      "outcome": "answered",
+      "totalMs": 7456,
+      "ragCoreMs": 7245,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 233,
+        "retrieving": 0,
+        "generating": 7012,
+        "verifying": 211,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 18,
+      "question": "प्रामाणिकपणा किंवा सचोटीची व्याख्या",
+      "startedAt": "2026-08-16T16:39:01.483Z",
+      "outcome": "answered",
+      "totalMs": 7037,
+      "ragCoreMs": 6818,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 266,
+        "retrieving": 0,
+        "generating": 6552,
+        "verifying": 219,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 19,
+      "question": "लिंकन नंतरचा वातावरणाचा दाब किती आहे?",
+      "startedAt": "2026-08-16T16:39:26.533Z",
+      "outcome": "answered",
+      "totalMs": 5350,
+      "ragCoreMs": 5082,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 233,
+        "retrieving": 0,
+        "generating": 4849,
+        "verifying": 268,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 20,
+      "question": "स्ट्रुथर्स शहर शाळा जिल्हा राज्य क्रमांक",
+      "startedAt": "2026-08-16T16:39:49.899Z",
+      "outcome": "answered",
+      "totalMs": 7189,
+      "ragCoreMs": 6959,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 263,
+        "retrieving": 0,
+        "generating": 6696,
+        "verifying": 229,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 21,
+      "question": "वैद्यकीय गांजा मदत करतो का?",
+      "startedAt": "2026-08-16T16:40:15.102Z",
+      "outcome": "answered",
+      "totalMs": 6363,
+      "ragCoreMs": 6096,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 276,
+        "retrieving": 0,
+        "generating": 5820,
+        "verifying": 267,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 22,
+      "question": "फ्रँक गिफर्डने किती स्त्रियांशी लग्न केले",
+      "startedAt": "2026-08-16T16:40:39.479Z",
+      "outcome": "refused",
+      "totalMs": 5300,
+      "ragCoreMs": 5066,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 222,
+        "retrieving": 1,
+        "generating": 4843,
+        "verifying": 234,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 23,
+      "question": "किती चालू ट्रम्प प्रशासनाच्या तपासण्या सुरू आहेत",
+      "startedAt": "2026-08-16T16:41:02.793Z",
+      "outcome": "answered",
+      "totalMs": 3675,
+      "ragCoreMs": 3517,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 208,
+        "retrieving": 0,
+        "generating": 3309,
+        "verifying": 158,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 24,
+      "question": "वॉवर वर अनुयायी कसे गोळा करावेत याचे मार्गदर्शन",
+      "startedAt": "2026-08-16T16:41:24.482Z",
+      "outcome": "answered",
+      "totalMs": 5872,
+      "ragCoreMs": 5629,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 237,
+        "retrieving": 1,
+        "generating": 5391,
+        "verifying": 243,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 25,
+      "question": "झेल्स ले अवे किती काळ आहे",
+      "startedAt": "2026-08-16T16:41:48.368Z",
+      "outcome": "answered",
+      "totalMs": 2480,
+      "ragCoreMs": 2307,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 234,
+        "retrieving": 1,
+        "generating": 2072,
+        "verifying": 173,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 26,
+      "question": "प्रदूषणामुळे मानवी लोकसंख्या कशी वाढते",
+      "startedAt": "2026-08-16T16:42:08.864Z",
+      "outcome": "refused",
+      "totalMs": 5273,
+      "ragCoreMs": 5052,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 277,
+        "retrieving": 0,
+        "generating": 4775,
+        "verifying": 221,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 27,
+      "question": "ஒரு நிறுவனம் என்பது என்ன?",
+      "startedAt": "2026-08-16T16:42:32.150Z",
+      "outcome": "answered",
+      "totalMs": 21092,
+      "ragCoreMs": 20810,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 238,
+        "retrieving": 0,
+        "generating": 20572,
+        "verifying": 282,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 28,
+      "question": "ஏன் ரேச்சல் கார்சன் ஒரு கடமையை நிறைவேற்ற வேண்டும் என்று எழுதினார்",
+      "startedAt": "2026-08-16T16:43:11.251Z",
+      "outcome": "error",
+      "error": "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details."
+    },
+    {
+      "index": 29,
+      "question": "பொட்டாசியம் குறைவுள்ள உணவுகளுக்கான வரைபடம்.",
+      "startedAt": "2026-08-16T16:43:37.660Z",
+      "outcome": "answered",
+      "totalMs": 6897,
+      "ragCoreMs": 6641,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 313,
+        "retrieving": 0,
+        "generating": 6328,
+        "verifying": 256,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 30,
+      "question": "சரக்குக் கப்பலின் முன்பகுதி",
+      "startedAt": "2026-08-16T16:44:02.572Z",
+      "outcome": "answered",
+      "totalMs": 5185,
+      "ragCoreMs": 4918,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 273,
+        "retrieving": 1,
+        "generating": 4644,
+        "verifying": 267,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 31,
+      "question": "லிங்கனில் இப்போது பரோமெட்ரிக் அழுத்தம் என்ன?",
+      "startedAt": "2026-08-16T16:44:25.772Z",
+      "outcome": "answered",
+      "totalMs": 10230,
+      "ragCoreMs": 9962,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 274,
+        "retrieving": 0,
+        "generating": 9688,
+        "verifying": 268,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 32,
+      "question": "ஸ்ட்ரதர்ஸ் நகரப் பள்ளி மாவட்டம் மாநில எண்",
+      "startedAt": "2026-08-16T16:44:54.012Z",
+      "outcome": "refused",
+      "totalMs": 18078,
+      "ragCoreMs": 17842,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 226,
+        "retrieving": 0,
+        "generating": 17616,
+        "verifying": 236,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 33,
+      "question": "மருத்துவ மரிஜுவானா என்பது என்ன செய்ய உதவுகிறது?",
+      "startedAt": "2026-08-16T16:45:30.105Z",
+      "outcome": "answered",
+      "totalMs": 6557,
+      "ragCoreMs": 6330,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 270,
+        "retrieving": 0,
+        "generating": 6060,
+        "verifying": 227,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 34,
+      "question": "ஃபிராங்க் கிஃபோர்டு எத்தனை பெண்களை திருமணம் செய்து கொண்டார்",
+      "startedAt": "2026-08-16T16:45:54.675Z",
+      "outcome": "refused",
+      "totalMs": 4998,
+      "ragCoreMs": 4646,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 253,
+        "retrieving": 0,
+        "generating": 4393,
+        "verifying": 352,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 35,
+      "question": "ட்ரம்ப் நிர்வாகத்தின் எத்தனை விசாரணைகள் நடந்து கொண்டிருக்கின்றன",
+      "startedAt": "2026-08-16T16:46:17.686Z",
+      "outcome": "answered",
+      "totalMs": 23191,
+      "ragCoreMs": 22899,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 246,
+        "retrieving": 1,
+        "generating": 22652,
+        "verifying": 292,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 36,
+      "question": "வாவ்-இல் பின்தொடர்பவர்களை எவ்வாறு சேகரிப்பது என்பதற்கான வழிகாட்டி",
+      "startedAt": "2026-08-16T16:46:58.892Z",
+      "outcome": "answered",
+      "totalMs": 9764,
+      "ragCoreMs": 9522,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 231,
+        "retrieving": 0,
+        "generating": 9291,
+        "verifying": 242,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 37,
+      "question": "சேல்ஸ் எவ்வளவு காலம் தனியாக வசிக்கிறது",
+      "startedAt": "2026-08-16T16:47:26.670Z",
+      "outcome": "answered",
+      "totalMs": 5884,
+      "ragCoreMs": 5541,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 238,
+        "retrieving": 0,
+        "generating": 5303,
+        "verifying": 343,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 38,
+      "question": "மாசுபாடு மனித மக்கள்தொகையை எப்படி அதிகரிக்கிறது",
+      "startedAt": "2026-08-16T16:47:50.569Z",
+      "outcome": "error",
+      "error": "This operation was aborted"
+    },
+    {
+      "index": 39,
+      "question": "కార్పొరేషన్ అంటే ఏమిటి?",
+      "startedAt": "2026-08-16T16:48:37.645Z",
+      "outcome": "answered",
+      "totalMs": 4325,
+      "ragCoreMs": 4177,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 229,
+        "retrieving": 0,
+        "generating": 3948,
+        "verifying": 148,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 40,
+      "question": "రాచెల్ కార్సన్ ఎందుకు సహించాల్సిన బాధ్యతను వ్రాశారు",
+      "startedAt": "2026-08-16T16:48:59.986Z",
+      "outcome": "error",
+      "error": "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details."
+    },
+    {
+      "index": 41,
+      "question": "పొటాషియం తక్కువగా ఉండే ఆహారాల పట్టిక.",
+      "startedAt": "2026-08-16T16:49:24.038Z",
+      "outcome": "answered",
+      "totalMs": 3155,
+      "ragCoreMs": 2948,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 304,
+        "retrieving": 0,
+        "generating": 2644,
+        "verifying": 207,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 42,
+      "question": "సరుకు నౌక యొక్క దిగువ భాగం",
+      "startedAt": "2026-08-16T16:49:45.207Z",
+      "outcome": "answered",
+      "totalMs": 2555,
+      "ragCoreMs": 2392,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 279,
+        "retrieving": 0,
+        "generating": 2113,
+        "verifying": 163,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 43,
+      "question": "నిజాయితీ లేదా సమగ్రత నిర్వచనం",
+      "startedAt": "2026-08-16T16:50:05.777Z",
+      "outcome": "answered",
+      "totalMs": 6197,
+      "ragCoreMs": 5819,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 247,
+        "retrieving": 0,
+        "generating": 5572,
+        "verifying": 378,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 44,
+      "question": "లింకన్ నేలో బారోమెట్రిక్ పీడనం ఇప్పుడు ఎంత?",
+      "startedAt": "2026-08-16T16:50:29.987Z",
+      "outcome": "answered",
+      "totalMs": 5089,
+      "ragCoreMs": 4814,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 263,
+        "retrieving": 1,
+        "generating": 4550,
+        "verifying": 275,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 45,
+      "question": "స్ట్రతర్స్ సిటీ స్కూల్ జిల్లా రాష్ట్ర సంఖ్య",
+      "startedAt": "2026-08-16T16:50:53.089Z",
+      "outcome": "refused",
+      "totalMs": 5529,
+      "ragCoreMs": 5270,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 252,
+        "retrieving": 0,
+        "generating": 5018,
+        "verifying": 259,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 46,
+      "question": "వైద్య మారిజువానా మైట్రోక్స్‌తో సహాయపడుతుందా?",
+      "startedAt": "2026-08-16T16:51:16.633Z",
+      "outcome": "answered",
+      "totalMs": 5299,
+      "ragCoreMs": 5065,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 249,
+        "retrieving": 0,
+        "generating": 4816,
+        "verifying": 234,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 47,
+      "question": "ఫ్రాంక్ గిఫోర్డ్ ఎంత మంది మహిళలను వివాహం చేసుకున్నాడు",
+      "startedAt": "2026-08-16T16:51:39.946Z",
+      "outcome": "refused",
+      "totalMs": 5306,
+      "ragCoreMs": 5025,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 231,
+        "retrieving": 0,
+        "generating": 4794,
+        "verifying": 281,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 48,
+      "question": "ప్రస్తుతం ట్రంప్ పరిపాలనలో ఎన్ని దర్యాప్తులు జరుగుతున్నాయి",
+      "startedAt": "2026-08-16T16:52:03.265Z",
+      "outcome": "refused",
+      "totalMs": 2557,
+      "ragCoreMs": 2322,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 242,
+        "retrieving": 0,
+        "generating": 2080,
+        "verifying": 235,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 49,
+      "question": "వావ్‌లో అనుచరులను ఎలా సేకరించాలో మార్గదర్శి",
+      "startedAt": "2026-08-16T16:52:23.836Z",
+      "outcome": "answered",
+      "totalMs": 4619,
+      "ragCoreMs": 4394,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 267,
+        "retrieving": 0,
+        "generating": 4127,
+        "verifying": 225,
+        "answered": 0
+      },
+      "error": null
+    },
+    {
+      "index": 50,
+      "question": "జేల్స్ ఎంతకాలం విశ్రాంతి తీసుకుంటారు",
+      "startedAt": "2026-08-16T16:52:46.469Z",
+      "outcome": "answered",
+      "totalMs": 9854,
+      "ragCoreMs": 9591,
+      "stageDurations": {
+        "transcribing": null,
+        "embedding": 221,
+        "retrieving": 0,
+        "generating": 9370,
+        "verifying": 263,
+        "answered": 0
+      },
+      "error": null
+    }
+  ]
+}

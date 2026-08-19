@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-08-17T13:34:50.341Z",
+  "results": [
+    {
+      "name": "rapid_back_to_back_a_model_fix",
+      "outcome": "answered",
+      "transcript": "कॉर्पोरेशन क्या है?",
+      "answer": "कॉर्पोरेशन एक कंपनी या लोगों का समूह है जो एक एकल इकाई के रूप में कार्य करने के लिए अधिकृत होता है और कानून में मान्यता प्राप्त है।",
+      "refusalReason": null,
+      "sourceCount": 7,
+      "totalMs": 6114,
+      "stages": [
+        {
+          "name": "transcribing",
+          "status": "complete",
+          "startedAt": 1786973682599,
+          "completedAt": 1786973685721,
+          "durationMs": 3122,
+          "retries": 0,
+          "detail": "Detected hi-IN."
+        },
+        {
+          "name": "embedding",
+          "status": "complete",
+          "startedAt": 1786973685722,
+          "completedAt": 1786973686033,
+          "durationMs": 311,
+          "retries": 0,
+          "detail": "Gemini query vector returned."
+        },
+        {
+          "name": "retrieving",
+          "status": "complete",
+          "startedAt": 1786973686033,
+          "completedAt": 1786973686042,
+          "durationMs": 9,
+          "retries": 0,
+          "detail": "7 HNSW candidates returned."
+        },
+        {
+          "name": "generating",
+          "status": "complete",
+          "startedAt": 1786973686042,
+          "completedAt": 1786973688547,
+          "durationMs": 2505,
+          "retries": 0,
+          "detail": "Structured, source-cited answer returned."
+        },
+        {
+          "name": "verifying",
+          "status": "complete",
+          "startedAt": 1786973688547,
+          "completedAt": 1786973688713,
+          "durationMs": 166,
+          "retries": 0,
+          "detail": "Citations and semantic support verified."
+        },
+        {
+          "name": "answered",
+          "status": "complete",
+          "startedAt": 1786973688713,
+          "completedAt": 1786973688713,
+          "durationMs": 0,
+          "retries": 0,
+          "detail": "Grounded answer released."
+        }
+      ]
+    },
+    {
+      "name": "rapid_back_to_back_b_model_fix",
+      "outcome": "answered",
+      "transcript": "ईमानदारी या सच्चाई की परिभाषा क्या है?",
+      "answer": "ईमानदारी या सच्चाई वह स्थिति है जिसमें कोई व्यक्ति ईमानदार हो; अर्थात् निष्ठा, तथा व्यक्ति का मूल्य और नैतिकता।",
+      "refusalReason": null,
+      "sourceCount": 7,
+      "totalMs": 7701,
+      "stages": [
+        {
+          "name": "transcribing",
+          "status": "complete",
+          "startedAt": 1786973682640,
+          "completedAt": 1786973686873,
+          "durationMs": 4233,
+          "retries": 0,
+          "detail": "Detected hi-IN."
+        },
+        {
+          "name": "embedding",
+          "status": "complete",
+          "startedAt": 1786973686873,
+          "completedAt": 1786973687054,
+          "durationMs": 181,
+          "retries": 0,
+          "detail": "Gemini query vector returned."
+        },
+        {
+          "name": "retrieving",
+          "status": "complete",
+          "startedAt": 1786973687054,
+          "completedAt": 1786973687054,
+          "durationMs": 0,
+          "retries": 0,
+          "detail": "7 HNSW candidates returned."
+        },
+        {
+          "name": "generating",
+          "status": "complete",
+          "startedAt": 1786973687054,
+          "completedAt": 1786973690162,
+          "durationMs": 3108,
+          "retries": 0,
+          "detail": "Structured, source-cited answer returned."
+        },
+        {
+          "name": "verifying",
+          "status": "complete",
+          "startedAt": 1786973690162,
+          "completedAt": 1786973690341,
+          "durationMs": 179,
+          "retries": 0,
+          "detail": "Citations and semantic support verified."
+        },
+        {
+          "name": "answered",
+          "status": "complete",
+          "startedAt": 1786973690341,
+          "completedAt": 1786973690341,
+          "durationMs": 0,
+          "retries": 0,
+          "detail": "Grounded answer released."
+        }
+      ]
+    }
+  ]
+}

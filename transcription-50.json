@@ -1,0 +1,463 @@
+{
+  "generatedAt": "2026-08-17T13:54:00.478Z",
+  "requestedObservations": 50,
+  "completedObservations": 50,
+  "errors": 0,
+  "stage": {
+    "p50": 1992,
+    "p70": 2206,
+    "p100": 4079
+  },
+  "observations": [
+    {
+      "iteration": 1,
+      "fixture": 1,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 3062,
+      "retries": 0,
+      "transcript": "कॉर्पोरेशन क्या है?"
+    },
+    {
+      "iteration": 1,
+      "fixture": 2,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1915,
+      "retries": 0,
+      "transcript": "रेचल कार्सन ने क्यों एक दायित्व बर्दाश्त करने के लिए लिखा?"
+    },
+    {
+      "iteration": 1,
+      "fixture": 3,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1547,
+      "retries": 0,
+      "transcript": "पोटैशियम में कम खाद्य पदार्थों का चार्ट।"
+    },
+    {
+      "iteration": 1,
+      "fixture": 4,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1425,
+      "retries": 0,
+      "transcript": "मालवाहक जहाज के नीचे की तरफ क्या होता है?"
+    },
+    {
+      "iteration": 1,
+      "fixture": 5,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1965,
+      "retries": 0,
+      "transcript": "ईमानदारी या सच्चाई की परिभाषा क्या है?"
+    },
+    {
+      "iteration": 1,
+      "fixture": 6,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1897,
+      "retries": 0,
+      "transcript": "क्या चिकित्सीय मारिजुआना मदद करता है?"
+    },
+    {
+      "iteration": 1,
+      "fixture": 7,
+      "languageCode": "en-IN",
+      "outcome": "complete",
+      "durationMs": 1335,
+      "retries": 0,
+      "transcript": "What is the weather in Goa today?"
+    },
+    {
+      "iteration": 1,
+      "fixture": 8,
+      "languageCode": "en-IN",
+      "outcome": "complete",
+      "durationMs": 2884,
+      "retries": 0,
+      "transcript": "Speak English with a natural Indian accent and a clear everyday question delivery. Who won the FIFA World Cup in 2026?"
+    },
+    {
+      "iteration": 1,
+      "fixture": 9,
+      "languageCode": "mr-IN",
+      "outcome": "complete",
+      "durationMs": 1515,
+      "retries": 0,
+      "transcript": "कॉर्पोरेशन म्हणजे काय?"
+    },
+    {
+      "iteration": 1,
+      "fixture": 10,
+      "languageCode": "ta-IN",
+      "outcome": "complete",
+      "durationMs": 1395,
+      "retries": 0,
+      "transcript": "ஒரு நிறுவனம் என்பது என்ன?"
+    },
+    {
+      "iteration": 2,
+      "fixture": 1,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1182,
+      "retries": 0,
+      "transcript": "कॉर्पोरेशन क्या है?"
+    },
+    {
+      "iteration": 2,
+      "fixture": 2,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2168,
+      "retries": 0,
+      "transcript": "रेचल कार्सन ने क्यों एक दायित्व बर्दाश्त करने के लिए लिखा?"
+    },
+    {
+      "iteration": 2,
+      "fixture": 3,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1702,
+      "retries": 0,
+      "transcript": "पोटैशियम में कम खाद्य पदार्थों का चार्ट।"
+    },
+    {
+      "iteration": 2,
+      "fixture": 4,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2650,
+      "retries": 0,
+      "transcript": "मालवाहक जहाज के नीचे की तरफ क्या होता है?"
+    },
+    {
+      "iteration": 2,
+      "fixture": 5,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2182,
+      "retries": 0,
+      "transcript": "ईमानदारी या सच्चाई की परिभाषा क्या है?"
+    },
+    {
+      "iteration": 2,
+      "fixture": 6,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1993,
+      "retries": 0,
+      "transcript": "क्या चिकित्सीय मारिजुआना मदद करता है?"
+    },
+    {
+      "iteration": 2,
+      "fixture": 7,
+      "languageCode": "en-IN",
+      "outcome": "complete",
+      "durationMs": 1575,
+      "retries": 0,
+      "transcript": "What is the weather in Goa today?"
+    },
+    {
+      "iteration": 2,
+      "fixture": 8,
+      "languageCode": "en-IN",
+      "outcome": "complete",
+      "durationMs": 3809,
+      "retries": 0,
+      "transcript": "Speak English with a natural Indian accent and a clear everyday question delivery. Who won the FIFA World Cup in 2026?"
+    },
+    {
+      "iteration": 2,
+      "fixture": 9,
+      "languageCode": "mr-IN",
+      "outcome": "complete",
+      "durationMs": 1415,
+      "retries": 0,
+      "transcript": "कॉर्पोरेशन म्हणजे काय?"
+    },
+    {
+      "iteration": 2,
+      "fixture": 10,
+      "languageCode": "ta-IN",
+      "outcome": "complete",
+      "durationMs": 1487,
+      "retries": 0,
+      "transcript": "ஒரு நிறுவனம் என்பது என்ன?"
+    },
+    {
+      "iteration": 3,
+      "fixture": 1,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1663,
+      "retries": 0,
+      "transcript": "कॉर्पोरेशन क्या है?"
+    },
+    {
+      "iteration": 3,
+      "fixture": 2,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2184,
+      "retries": 0,
+      "transcript": "रेचल कार्सन ने क्यों एक दायित्व बर्दाश्त करने के लिए लिखा?"
+    },
+    {
+      "iteration": 3,
+      "fixture": 3,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2171,
+      "retries": 0,
+      "transcript": "पोटैशियम में कम खाद्य पदार्थों का चार्ट।"
+    },
+    {
+      "iteration": 3,
+      "fixture": 4,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2518,
+      "retries": 0,
+      "transcript": "मालवाहक जहाज के नीचे की तरफ क्या होता है?"
+    },
+    {
+      "iteration": 3,
+      "fixture": 5,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2174,
+      "retries": 0,
+      "transcript": "ईमानदारी या सच्चाई की परिभाषा क्या है?"
+    },
+    {
+      "iteration": 3,
+      "fixture": 6,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2206,
+      "retries": 0,
+      "transcript": "क्या चिकित्सीय मारिजुआना मदद करता है?"
+    },
+    {
+      "iteration": 3,
+      "fixture": 7,
+      "languageCode": "en-IN",
+      "outcome": "complete",
+      "durationMs": 1923,
+      "retries": 0,
+      "transcript": "What is the weather in Goa today?"
+    },
+    {
+      "iteration": 3,
+      "fixture": 8,
+      "languageCode": "en-IN",
+      "outcome": "complete",
+      "durationMs": 4079,
+      "retries": 0,
+      "transcript": "Speak English with a natural Indian accent and a clear everyday question delivery. Who won the FIFA World Cup in 2026?"
+    },
+    {
+      "iteration": 3,
+      "fixture": 9,
+      "languageCode": "mr-IN",
+      "outcome": "complete",
+      "durationMs": 1992,
+      "retries": 0,
+      "transcript": "कॉर्पोरेशन म्हणजे काय?"
+    },
+    {
+      "iteration": 3,
+      "fixture": 10,
+      "languageCode": "ta-IN",
+      "outcome": "complete",
+      "durationMs": 1792,
+      "retries": 0,
+      "transcript": "ஒரு நிறுவனம் என்பது என்ன?"
+    },
+    {
+      "iteration": 4,
+      "fixture": 1,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1446,
+      "retries": 0,
+      "transcript": "कॉर्पोरेशन क्या है?"
+    },
+    {
+      "iteration": 4,
+      "fixture": 2,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 3003,
+      "retries": 0,
+      "transcript": "रेचल कार्सन ने क्यों एक दायित्व बर्दाश्त करने के लिए लिखा?"
+    },
+    {
+      "iteration": 4,
+      "fixture": 3,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2331,
+      "retries": 0,
+      "transcript": "पोटैशियम में कम खाद्य पदार्थों का चार्ट।"
+    },
+    {
+      "iteration": 4,
+      "fixture": 4,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2536,
+      "retries": 0,
+      "transcript": "मालवाहक जहाज के नीचे की तरफ क्या होता है?"
+    },
+    {
+      "iteration": 4,
+      "fixture": 5,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1878,
+      "retries": 0,
+      "transcript": "ईमानदारी या सच्चाई की परिभाषा क्या है?"
+    },
+    {
+      "iteration": 4,
+      "fixture": 6,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2193,
+      "retries": 0,
+      "transcript": "क्या चिकित्सीय मारिजुआना मदद करता है?"
+    },
+    {
+      "iteration": 4,
+      "fixture": 7,
+      "languageCode": "en-IN",
+      "outcome": "complete",
+      "durationMs": 1426,
+      "retries": 0,
+      "transcript": "What is the weather in Goa today?"
+    },
+    {
+      "iteration": 4,
+      "fixture": 8,
+      "languageCode": "en-IN",
+      "outcome": "complete",
+      "durationMs": 4054,
+      "retries": 0,
+      "transcript": "Speak English with a natural Indian accent and a clear everyday question delivery. Who won the FIFA World Cup in 2026?"
+    },
+    {
+      "iteration": 4,
+      "fixture": 9,
+      "languageCode": "mr-IN",
+      "outcome": "complete",
+      "durationMs": 1554,
+      "retries": 0,
+      "transcript": "कॉर्पोरेशन म्हणजे काय?"
+    },
+    {
+      "iteration": 4,
+      "fixture": 10,
+      "languageCode": "ta-IN",
+      "outcome": "complete",
+      "durationMs": 1806,
+      "retries": 0,
+      "transcript": "ஒரு நிறுவனம் என்பது என்ன?"
+    },
+    {
+      "iteration": 5,
+      "fixture": 1,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 1748,
+      "retries": 0,
+      "transcript": "कॉर्पोरेशन क्या है?"
+    },
+    {
+      "iteration": 5,
+      "fixture": 2,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2594,
+      "retries": 0,
+      "transcript": "रेचल कार्सन ने क्यों एक दायित्व बर्दाश्त करने के लिए लिखा?"
+    },
+    {
+      "iteration": 5,
+      "fixture": 3,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2141,
+      "retries": 0,
+      "transcript": "पोटैशियम में कम खाद्य पदार्थों का चार्ट।"
+    },
+    {
+      "iteration": 5,
+      "fixture": 4,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2538,
+      "retries": 0,
+      "transcript": "मालवाहक जहाज के नीचे की तरफ क्या होता है?"
+    },
+    {
+      "iteration": 5,
+      "fixture": 5,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2235,
+      "retries": 0,
+      "transcript": "ईमानदारी या सच्चाई की परिभाषा क्या है?"
+    },
+    {
+      "iteration": 5,
+      "fixture": 6,
+      "languageCode": "hi-IN",
+      "outcome": "complete",
+      "durationMs": 2037,
+      "retries": 0,
+      "transcript": "क्या चिकित्सीय मारिजुआना मदद करता है?"
+    },
+    {
+      "iteration": 5,
+      "fixture": 7,
+      "languageCode": "en-IN",
+      "outcome": "complete",
+      "durationMs": 1669,
+      "retries": 0,
+      "transcript": "What is the weather in Goa today?"
+    },
+    {
+      "iteration": 5,
+      "fixture": 8,
+      "languageCode": "en-IN",
+      "outcome": "complete",
+      "durationMs": 3985,
+      "retries": 0,
+      "transcript": "Speak English with a natural Indian accent and a clear everyday question delivery. Who won the FIFA World Cup in 2026?"
+    },
+    {
+      "iteration": 5,
+      "fixture": 9,
+      "languageCode": "mr-IN",
+      "outcome": "complete",
+      "durationMs": 1563,
+      "retries": 0,
+      "transcript": "कॉर्पोरेशन म्हणजे काय?"
+    },
+    {
+      "iteration": 5,
+      "fixture": 10,
+      "languageCode": "ta-IN",
+      "outcome": "complete",
+      "durationMs": 2468,
+      "retries": 0,
+      "transcript": "ஒரு நிறுவனம் என்பது என்ன?"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+PROJECT: Vaani — Grounded Voice Intelligence
+(vaani = voice/speech in Hindi. Voice-to-answer RAG system: speak a
+question, get a grounded, source-cited answer. Built for a hackathon
+demo — every technical requirement below must be VISIBLE in the UI,
+not just working in the backend.)
+
+═══════════════════════════════════════
+DESIGN SYSTEM — follow exactly, do not default to generic dark SaaS
+═══════════════════════════════════════
+Reference: Aura "Nexus - AI Intelligence" design system by Sourasith Phomhome.
+
+Palette:
+- Background: near-black #030303 (not pure black — slight warmth)
+- Primary accent (mint/emerald): #40E79A
+- Secondary accent (deep green): #11A769
+- Neutral gray: #888888
+- Secondary neutral: #A19FA9
+- White: #FFFFFF
+
+Typography:
+- Display/headline: Inter, 64px, tight tracking
+- Body: Geist, 16px
+
+Signature motif: glowing horizontal waveform/flow lines (like an
+audio waveform crossed with a data signal) as the hero visual —
+mint green glow on black, soft blur/glow filter, gently animated
+(slow horizontal drift, not fast). This waveform IS the mic
+visualizer during voice capture — reuse the same visual language
+for "idle branding" and "actively listening" states so it feels
+like one system, not two designs bolted together.
+
+Tone: "Cognition, Redefined" — confident, technical, minimal copy,
+generous negative space, no gradient soup, no stock AI-brain
+imagery. Buttons: pill-shaped, high contrast (solid mint on black,
+or outline).
+
+═══════════════════════════════════════
+STRUCTURE
+═══════════════════════════════════════
+1. HERO — the waveform visual, one-line pitch, big mic button
+   (states below), tagline referencing #RAGInGoa build.
+2. LIVE PIPELINE — voice interaction lives here. Show every stage
+   as it happens, not just a spinner:
+   Listening → Transcribing → Retrieving → Generating → Answered
+   Each stage gets a visible checkpoint/timestamp as it completes.
+3. ANSWER PANEL — the grounded answer, plus the actual retrieved
+   passages it was grounded on (show 2-3 source chunks with their
+   similarity score, expandable). If guardrail refused, show a
+   distinct "not enough grounded context to answer" state — this
+   is a FEATURE, design it deliberately, don't just hide the panel.
+4. METRICS PANEL — live latency badge (this query's total ms) +
+   a small P50/P70/P100 chart across the benchmark run. Style this
+   panel like a real-time monitoring readout — thin mint bars/lines
+   on black, monospace numerals for the ms values.
+5. HOW IT'S BUILT — short technical credibility section: chunking
+   strategies used, harness/retry behavior, guardrail logic. Judges
+   read this. Make it scannable, not a wall of text.
+6. FOOTER — GitHub link, #RAGInGoa, team.
+
+═══════════════════════════════════════
+INTERACTION STATES (design + build all of these, not just "happy path")
+═══════════════════════════════════════
+- Idle (waveform breathing gently)
+- Listening (waveform reacts to live mic input, not looping animation)
+- Transcribing (transcript streams in as text)
+- Retrieving (show which chunk strategy hit, brief)
+- Generating (streamed token output if possible)
+- Answered (answer + sources + latency badge)
+- Guardrail refusal (distinct visual treatment — not an error state,
+  a "system working correctly by declining" state)
+- Error/retry (harness retried an API call — show this happened,
+  don't hide it, it proves the harness requirement)
+
+═══════════════════════════════════════
+TECHNICAL WIRING — real, not mocked
+═══════════════════════════════════════
+- Frontend: Next.js + TypeScript + TailwindCSS, real mic capture
+  (MediaRecorder API) streamed to backend
+- Backend: Fastify API with routes /api/transcribe, /api/query,
+  /api/metrics — actually call Sarvam for STT, Ollama (bge-m3) for
+  local embeddings, hnswlib-node for in-memory vector search over
+  the pre-chunked MSMARCO-XI subset, Groq (llama-3.1-8b-instant)
+  for generation
+- Every stage timestamp gets logged server-side and returned to
+  the frontend for the metrics panel — this must be real measured
+  latency, not a hardcoded number
+- Guardrail: retrieval similarity threshold gate + post-generation
+  groundedness check, both real, both must be able to actually
+  trigger a refusal in the demo
+- Do NOT mock the retrieval or generation responses. Do NOT
+  hardcode the latency numbers. If an API key is missing, show a
+  clear setup error, don't fake success.
+
+Mobile responsive, keyboard accessible, fast initial load — this
+gets judged live on a projector and on a phone.

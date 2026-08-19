@@ -1,0 +1,735 @@
+{
+  "version": 1,
+  "model": "gemini-embedding-001",
+  "dimensions": 3072,
+  "metric": "cosine",
+  "builtAt": 1786891120383,
+  "corpus": {
+    "dataset": "ai4bharat/MSMARCO-XI",
+    "split": "validation",
+    "sourceFile": "validation/hinval.parquet, validation/marval.parquet, validation/tamval.parquet, validation/telval.parquet",
+    "sourceRows": 52,
+    "languages": [
+      "hi-IN",
+      "mr-IN",
+      "ta-IN",
+      "te-IN"
+    ]
+  },
+  "chunks": [
+    {
+      "id": "hi-IN:validation:0:validation:0",
+      "label": 0,
+      "content": "Question: कॉर्पोरेशन क्या है? Evidence: निगम एक कंपनी या लोगों का समूह होता है जो एक एकल इकाई के रूप में कार्य करने के लिए अधिकृत होता है और कानून में इस प्रकार से मान्यता प्राप्त होती है।",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 0,
+        "field": "Answer",
+        "sourceQuery": "कॉर्पोरेशन क्या है?"
+      }
+    },
+    {
+      "id": "hi-IN:validation:1:validation:0",
+      "label": 1,
+      "content": "Question: रेचल कार्सन ने क्यों एक दायित्व बर्दाश्त करने के लिए लिखा Evidence: रेचल कार्सन ने लिखा है कि \"द ओब्लिगेशन टू एंड्योर\" क्योंकि उनका मानना है कि जैसे-जैसे आदमी अवांछित कीड़ों और खरपतवारों को खत्म करने की कोशिश करता है, वैसे-वैसे वह वास्तव में पर्यावरण को प्रदूषित करके और अधिक समस्याएं पैदा कर रहा है।",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 1,
+        "field": "Answer",
+        "sourceQuery": "रेचल कार्सन ने क्यों एक दायित्व बर्दाश्त करने के लिए लिखा"
+      }
+    },
+    {
+      "id": "hi-IN:validation:2:validation:0",
+      "label": 2,
+      "content": "Question: पोटेशियम में कम खाद्य पदार्थों का चार्ट। Evidence: Low Sodium Low Potassium Foods List. On this page we offer a searchable collection of nutritional data on thousands of foods for healthy diet. Healthy eating is not only beneficial to weight loss, but will obviously improve your health.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 2,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "पोटेशियम में कम खाद्य पदार्थों का चार्ट।"
+      }
+    },
+    {
+      "id": "hi-IN:validation:3:validation:0",
+      "label": 3,
+      "content": "Question: मालवाहक जहाज़ के नीचे की तरफ Evidence: Take advantage of great opportunities that regularly present themselves through Shipned. Besides flat bottom tankers you will find anything from river barges to ferries, tankers, chemical oil tankers, or dry cargo vessels. Be the first to know. Be the first to know when new flat bottom tankers enter our stock. Subscribe yourself to our mailing list so that you are notified of our new arrivals. Shipned has been active as an international ship trader since 1984, offering both river and sea vessels and other maritime projects such as yachts.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 3,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "मालवाहक जहाज़ के नीचे की तरफ"
+      }
+    },
+    {
+      "id": "hi-IN:validation:4:validation:0",
+      "label": 4,
+      "content": "Question: ईमानदारी या सच्चाई की परिभाषा Evidence: ईमानदारी: ईमानदार होने की स्थिति। निष्ठा: ईमानदारी के संबंध में या उसके अतिरिक्त व्यक्ति का मूल्य और नैतिकता।",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 4,
+        "field": "Answer",
+        "sourceQuery": "ईमानदारी या सच्चाई की परिभाषा"
+      }
+    },
+    {
+      "id": "hi-IN:validation:5:validation:0",
+      "label": 5,
+      "content": "Question: लिंकन में अब वायुमंडलीय दबाव क्या है? Evidence: When the air pressure rises, it pushes the mercury higher. When the air pressure drops, so does the mercury level.. Atmospheric pressure can also be measured in millibars (mb), with a bar being roughly equivalent to one atmosphere of pressure (one atmosphere equals 1.01325 bars). One bar is equivalent to 29.6 in. Hg.A barometer reading of 30 inches (Hg) is considered normal.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 5,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "लिंकन में अब वायुमंडलीय दबाव क्या है?"
+      }
+    },
+    {
+      "id": "hi-IN:validation:6:validation:0",
+      "label": 6,
+      "content": "Question: स्ट्रूथर्स शहर स्कूल जिला राज्य संख्या Evidence: SAVE SCHOOL. 1 Struthers Elementary School serves 697 students in grades PK-4. 2 Minority enrollment is 20% of the student body (majority Hispanic), which is less than the state average of 28%. 3 Struthers Elementary School operates within the Struthers City School District. School Overview The student population of 697 students has stayed relatively flat over five years.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 6,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "स्ट्रूथर्स शहर स्कूल जिला राज्य संख्या"
+      }
+    },
+    {
+      "id": "hi-IN:validation:7:validation:0",
+      "label": 7,
+      "content": "Question: क्या चिकित्सीय मारिजुआना मदत करता है? Evidence: new research from ontario canada has uncovered some interesting finds about how cannabis helps those suffering from post traumatic stress disorder these recent advancements help explain why so many veterans in the usa have abandoned their psychiatric medications and switched to cannabis",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 7,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "क्या चिकित्सीय मारिजुआना मदत करता है?"
+      }
+    },
+    {
+      "id": "hi-IN:validation:8:validation:0",
+      "label": 8,
+      "content": "Question: फ्रैंक गिफोर्ड ने कितनी महिलाओं से शादी की Evidence: People Celebrity. Celebrity. Inside Kathie Lee and Frank Gifford's 29-Year Love Story. While the legendary NFL player and sportscaster, who died on Sunday at the age of 84, had many successes in his long career, perhaps the thing he could be most proud of was his long and enduring relationship with his wife of almost 29 years.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 8,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "फ्रैंक गिफोर्ड ने कितनी महिलाओं से शादी की"
+      }
+    },
+    {
+      "id": "hi-IN:validation:9:validation:0",
+      "label": 9,
+      "content": "Question: कितनी ट्रम्प प्रशासन की जांच चल रही हैं Evidence: The newspaper’s “ongoing, nationwide analysis of state and federal court records” found that “at least 75 of the 4,000-plus lawsuits involving Trump and his businesses” remained open two weeks before Election Day.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 9,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "कितनी ट्रम्प प्रशासन की जांच चल रही हैं"
+      }
+    },
+    {
+      "id": "hi-IN:validation:10:validation:0",
+      "label": 10,
+      "content": "Question: वॉव पर अनुयायियों को कैसे इकट्ठा किया जाए, इसका मार्गदर्शक Evidence: That concludes our how to guide on obtaining three easy to obtain Followers. Be sure and keep watch for our next installment that will detail how to get four more Followers for your Garrison with little to no work! In the meantime, get to work collecting the Followers found above! To read the latest guides, news, and features you can visit our World of Warcraft Game Page.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 10,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "वॉव पर अनुयायियों को कैसे इकट्ठा किया जाए, इसका मार्गदर्शक"
+      }
+    },
+    {
+      "id": "hi-IN:validation:11:validation:0",
+      "label": 11,
+      "content": "Question: ज़ेल्स कितने समय तक दूर रहना पड़ता है Evidence: If your monthly payment is not made, the store does reserve the right to cancel the layaway. A refund will be provided to you by the method of payment originally received. If the payment method was cash, a corporate check will be sent to you. The maximum amount of time allowed to pay off a layaway is 10 months.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 11,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "ज़ेल्स कितने समय तक दूर रहना पड़ता है"
+      }
+    },
+    {
+      "id": "hi-IN:validation:12:validation:0",
+      "label": 12,
+      "content": "Question: प्रदूषण के कारण मानव आबादी कैसे बढ़ती है Evidence: क्या आप किसी के काम के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किस क के काम को करने के लिए किसी के काम को करने के लिए किसी के काम को करने के लिए किस क के काम को करने के लिए किसी के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस क के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करने के लिए किस के काम को करन",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "hi-IN",
+        "split": "validation",
+        "sourceFile": "validation/hinval.parquet",
+        "row": 12,
+        "field": "Answer",
+        "sourceQuery": "प्रदूषण के कारण मानव आबादी कैसे बढ़ती है"
+      }
+    },
+    {
+      "id": "mr-IN:validation:0:validation:0",
+      "label": 13,
+      "content": "Question: कॉर्पोरेशन म्हणजे काय? Evidence: कॉर्पोरेशन ही एक कंपनी किंवा लोकांचा समूह आहे ज्याला एकल संस्था म्हणून काम करण्याचा अधिकार आहे आणि ज्याला कायद्यानुसार मान्यता प्राप्त आहे.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 0,
+        "field": "Answer",
+        "sourceQuery": "कॉर्पोरेशन म्हणजे काय?"
+      }
+    },
+    {
+      "id": "mr-IN:validation:1:validation:0",
+      "label": 14,
+      "content": "Question: रॅचेल कार्सनला काय करावे लागले असे लिहिले गेले का? Evidence: रेचल कार्सन लिहितात की 'द ओब्लिगेशन टू एन्ड्युअर' कारण तिचा असा विश्वास आहे की जसजसा माणूस नको असलेले कीटक आणि तण काढून टाकण्याचा प्रयत्न करतो, तसतसा तो प्रत्यक्षात पर्यावरण प्रदूषित करून अधिक समस्या निर्माण करतो.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 1,
+        "field": "Answer",
+        "sourceQuery": "रॅचेल कार्सनला काय करावे लागले असे लिहिले गेले का?"
+      }
+    },
+    {
+      "id": "mr-IN:validation:2:validation:0",
+      "label": 15,
+      "content": "Question: पोटॅशियमचे प्रमाण कमी असलेल्या खाद्यपदार्थांचा तक्ता. Evidence: Low Sodium Low Potassium Foods List. On this page we offer a searchable collection of nutritional data on thousands of foods for healthy diet. Healthy eating is not only beneficial to weight loss, but will obviously improve your health.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 2,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "पोटॅशियमचे प्रमाण कमी असलेल्या खाद्यपदार्थांचा तक्ता."
+      }
+    },
+    {
+      "id": "mr-IN:validation:3:validation:0",
+      "label": 16,
+      "content": "Question: मालवाहू जहाजाच्या तळाशी समोर Evidence: Take advantage of great opportunities that regularly present themselves through Shipned. Besides flat bottom tankers you will find anything from river barges to ferries, tankers, chemical oil tankers, or dry cargo vessels. Be the first to know. Be the first to know when new flat bottom tankers enter our stock. Subscribe yourself to our mailing list so that you are notified of our new arrivals. Shipned has been active as an international ship trader since 1984, offering both river and sea vessels and other maritime projects such as yachts.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 3,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "मालवाहू जहाजाच्या तळाशी समोर"
+      }
+    },
+    {
+      "id": "mr-IN:validation:4:validation:0",
+      "label": 17,
+      "content": "Question: प्रामाणिकपणा किंवा सचोटीची व्याख्या Evidence: प्रामाणिकपणा: प्रामाणिक असण्याची स्थिती. सत्यनिष्ठा: सत्यनिष्ठेच्या संबंधात किंवा त्याव्यतिरिक्त एखाद्या व्यक्तीचे मूल्य आणि नैतिकता.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 4,
+        "field": "Answer",
+        "sourceQuery": "प्रामाणिकपणा किंवा सचोटीची व्याख्या"
+      }
+    },
+    {
+      "id": "mr-IN:validation:5:validation:0",
+      "label": 18,
+      "content": "Question: लिंकन नंतरचा वातावरणाचा दाब किती आहे? Evidence: When the air pressure rises, it pushes the mercury higher. When the air pressure drops, so does the mercury level.. Atmospheric pressure can also be measured in millibars (mb), with a bar being roughly equivalent to one atmosphere of pressure (one atmosphere equals 1.01325 bars). One bar is equivalent to 29.6 in. Hg.A barometer reading of 30 inches (Hg) is considered normal.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 5,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "लिंकन नंतरचा वातावरणाचा दाब किती आहे?"
+      }
+    },
+    {
+      "id": "mr-IN:validation:6:validation:0",
+      "label": 19,
+      "content": "Question: स्ट्रुथर्स शहर शाळा जिल्हा राज्य क्रमांक Evidence: SAVE SCHOOL. 1 Struthers Elementary School serves 697 students in grades PK-4. 2 Minority enrollment is 20% of the student body (majority Hispanic), which is less than the state average of 28%. 3 Struthers Elementary School operates within the Struthers City School District. School Overview The student population of 697 students has stayed relatively flat over five years.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 6,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "स्ट्रुथर्स शहर शाळा जिल्हा राज्य क्रमांक"
+      }
+    },
+    {
+      "id": "mr-IN:validation:7:validation:0",
+      "label": 20,
+      "content": "Question: वैद्यकीय गांजा मदत करतो का? Evidence: new research from ontario canada has uncovered some interesting finds about how cannabis helps those suffering from post traumatic stress disorder these recent advancements help explain why so many veterans in the usa have abandoned their psychiatric medications and switched to cannabis",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 7,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "वैद्यकीय गांजा मदत करतो का?"
+      }
+    },
+    {
+      "id": "mr-IN:validation:8:validation:0",
+      "label": 21,
+      "content": "Question: फ्रँक गिफर्डने किती स्त्रियांशी लग्न केले Evidence: People Celebrity. Celebrity. Inside Kathie Lee and Frank Gifford's 29-Year Love Story. While the legendary NFL player and sportscaster, who died on Sunday at the age of 84, had many successes in his long career, perhaps the thing he could be most proud of was his long and enduring relationship with his wife of almost 29 years.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 8,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "फ्रँक गिफर्डने किती स्त्रियांशी लग्न केले"
+      }
+    },
+    {
+      "id": "mr-IN:validation:9:validation:0",
+      "label": 22,
+      "content": "Question: किती चालू ट्रम्प प्रशासनाच्या तपासण्या सुरू आहेत Evidence: The newspaper’s “ongoing, nationwide analysis of state and federal court records” found that “at least 75 of the 4,000-plus lawsuits involving Trump and his businesses” remained open two weeks before Election Day.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 9,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "किती चालू ट्रम्प प्रशासनाच्या तपासण्या सुरू आहेत"
+      }
+    },
+    {
+      "id": "mr-IN:validation:10:validation:0",
+      "label": 23,
+      "content": "Question: वॉवर वर अनुयायी कसे गोळा करावेत याचे मार्गदर्शन Evidence: That concludes our how to guide on obtaining three easy to obtain Followers. Be sure and keep watch for our next installment that will detail how to get four more Followers for your Garrison with little to no work! In the meantime, get to work collecting the Followers found above! To read the latest guides, news, and features you can visit our World of Warcraft Game Page.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 10,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "वॉवर वर अनुयायी कसे गोळा करावेत याचे मार्गदर्शन"
+      }
+    },
+    {
+      "id": "mr-IN:validation:11:validation:0",
+      "label": 24,
+      "content": "Question: झेल्स ले अवे किती काळ आहे Evidence: If your monthly payment is not made, the store does reserve the right to cancel the layaway. A refund will be provided to you by the method of payment originally received. If the payment method was cash, a corporate check will be sent to you. The maximum amount of time allowed to pay off a layaway is 10 months.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 11,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "झेल्स ले अवे किती काळ आहे"
+      }
+    },
+    {
+      "id": "mr-IN:validation:12:validation:0",
+      "label": 25,
+      "content": "Question: प्रदूषणामुळे मानवी लोकसंख्या कशी वाढते Evidence: कायमचे कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठी कायमसाठ",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "mr-IN",
+        "split": "validation",
+        "sourceFile": "validation/marval.parquet",
+        "row": 12,
+        "field": "Answer",
+        "sourceQuery": "प्रदूषणामुळे मानवी लोकसंख्या कशी वाढते"
+      }
+    },
+    {
+      "id": "ta-IN:validation:0:validation:0",
+      "label": 26,
+      "content": "Question: ஒரு நிறுவனம் என்பது என்ன? Evidence: ஒரு நிறுவனம் என்பது சட்டத்தில் அங்கீகரிக்கப்பட்ட ஒரு தனி அமைப்பாக செயல்பட அங்கீகரிக்கப்பட்ட ஒரு நிறுவனம் அல்லது மக்கள் குழுவாகும்.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 0,
+        "field": "Answer",
+        "sourceQuery": "ஒரு நிறுவனம் என்பது என்ன?"
+      }
+    },
+    {
+      "id": "ta-IN:validation:1:validation:0",
+      "label": 27,
+      "content": "Question: ஏன் ரேச்சல் கார்சன் ஒரு கடமையை நிறைவேற்ற வேண்டும் என்று எழுதினார் Evidence: ரேச்சல் கார்சன் எழுதுகிறார், மனிதன் விரும்பத்தகாத பூச்சிகளையும் களைகளையும் அகற்ற முயற்சிக்கும்போது, அவன் உண்மையில் சுற்றுச்சூழலை மாசுபடுத்துவதன் மூலம் மேலும் பிரச்சனைகளை உருவாக்குகிறான் என்பதால் இதை சகித்துக் கொள்ள வேண்டிய கடமை என்று கருதுகிறார்.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 1,
+        "field": "Answer",
+        "sourceQuery": "ஏன் ரேச்சல் கார்சன் ஒரு கடமையை நிறைவேற்ற வேண்டும் என்று எழுதினார்"
+      }
+    },
+    {
+      "id": "ta-IN:validation:2:validation:0",
+      "label": 28,
+      "content": "Question: பொட்டாசியம் குறைவுள்ள உணவுகளுக்கான வரைபடம். Evidence: Low Sodium Low Potassium Foods List. On this page we offer a searchable collection of nutritional data on thousands of foods for healthy diet. Healthy eating is not only beneficial to weight loss, but will obviously improve your health.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 2,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "பொட்டாசியம் குறைவுள்ள உணவுகளுக்கான வரைபடம்."
+      }
+    },
+    {
+      "id": "ta-IN:validation:3:validation:0",
+      "label": 29,
+      "content": "Question: சரக்குக் கப்பலின் முன்பகுதி Evidence: Take advantage of great opportunities that regularly present themselves through Shipned. Besides flat bottom tankers you will find anything from river barges to ferries, tankers, chemical oil tankers, or dry cargo vessels. Be the first to know. Be the first to know when new flat bottom tankers enter our stock. Subscribe yourself to our mailing list so that you are notified of our new arrivals. Shipned has been active as an international ship trader since 1984, offering both river and sea vessels and other maritime projects such as yachts.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 3,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "சரக்குக் கப்பலின் முன்பகுதி"
+      }
+    },
+    {
+      "id": "ta-IN:validation:5:validation:0",
+      "label": 30,
+      "content": "Question: லிங்கனில் இப்போது பரோமெட்ரிக் அழுத்தம் என்ன? Evidence: When the air pressure rises, it pushes the mercury higher. When the air pressure drops, so does the mercury level.. Atmospheric pressure can also be measured in millibars (mb), with a bar being roughly equivalent to one atmosphere of pressure (one atmosphere equals 1.01325 bars). One bar is equivalent to 29.6 in. Hg.A barometer reading of 30 inches (Hg) is considered normal.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 5,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "லிங்கனில் இப்போது பரோமெட்ரிக் அழுத்தம் என்ன?"
+      }
+    },
+    {
+      "id": "ta-IN:validation:6:validation:0",
+      "label": 31,
+      "content": "Question: ஸ்ட்ரதர்ஸ் நகரப் பள்ளி மாவட்டம் மாநில எண் Evidence: SAVE SCHOOL. 1 Struthers Elementary School serves 697 students in grades PK-4. 2 Minority enrollment is 20% of the student body (majority Hispanic), which is less than the state average of 28%. 3 Struthers Elementary School operates within the Struthers City School District. School Overview The student population of 697 students has stayed relatively flat over five years.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 6,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "ஸ்ட்ரதர்ஸ் நகரப் பள்ளி மாவட்டம் மாநில எண்"
+      }
+    },
+    {
+      "id": "ta-IN:validation:7:validation:0",
+      "label": 32,
+      "content": "Question: மருத்துவ மரிஜுவானா என்பது என்ன செய்ய உதவுகிறது? Evidence: new research from ontario canada has uncovered some interesting finds about how cannabis helps those suffering from post traumatic stress disorder these recent advancements help explain why so many veterans in the usa have abandoned their psychiatric medications and switched to cannabis",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 7,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "மருத்துவ மரிஜுவானா என்பது என்ன செய்ய உதவுகிறது?"
+      }
+    },
+    {
+      "id": "ta-IN:validation:8:validation:0",
+      "label": 33,
+      "content": "Question: ஃபிராங்க் கிஃபோர்டு எத்தனை பெண்களை திருமணம் செய்து கொண்டார் Evidence: People Celebrity. Celebrity. Inside Kathie Lee and Frank Gifford's 29-Year Love Story. While the legendary NFL player and sportscaster, who died on Sunday at the age of 84, had many successes in his long career, perhaps the thing he could be most proud of was his long and enduring relationship with his wife of almost 29 years.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 8,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "ஃபிராங்க் கிஃபோர்டு எத்தனை பெண்களை திருமணம் செய்து கொண்டார்"
+      }
+    },
+    {
+      "id": "ta-IN:validation:9:validation:0",
+      "label": 34,
+      "content": "Question: ட்ரம்ப் நிர்வாகத்தின் எத்தனை விசாரணைகள் நடந்து கொண்டிருக்கின்றன Evidence: The newspaper’s “ongoing, nationwide analysis of state and federal court records” found that “at least 75 of the 4,000-plus lawsuits involving Trump and his businesses” remained open two weeks before Election Day.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 9,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "ட்ரம்ப் நிர்வாகத்தின் எத்தனை விசாரணைகள் நடந்து கொண்டிருக்கின்றன"
+      }
+    },
+    {
+      "id": "ta-IN:validation:10:validation:0",
+      "label": 35,
+      "content": "Question: வாவ்-இல் பின்தொடர்பவர்களை எவ்வாறு சேகரிப்பது என்பதற்கான வழிகாட்டி Evidence: That concludes our how to guide on obtaining three easy to obtain Followers. Be sure and keep watch for our next installment that will detail how to get four more Followers for your Garrison with little to no work! In the meantime, get to work collecting the Followers found above! To read the latest guides, news, and features you can visit our World of Warcraft Game Page.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 10,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "வாவ்-இல் பின்தொடர்பவர்களை எவ்வாறு சேகரிப்பது என்பதற்கான வழிகாட்டி"
+      }
+    },
+    {
+      "id": "ta-IN:validation:11:validation:0",
+      "label": 36,
+      "content": "Question: சேல்ஸ் எவ்வளவு காலம் தனியாக வசிக்கிறது Evidence: If your monthly payment is not made, the store does reserve the right to cancel the layaway. A refund will be provided to you by the method of payment originally received. If the payment method was cash, a corporate check will be sent to you. The maximum amount of time allowed to pay off a layaway is 10 months.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 11,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "சேல்ஸ் எவ்வளவு காலம் தனியாக வசிக்கிறது"
+      }
+    },
+    {
+      "id": "ta-IN:validation:12:validation:0",
+      "label": 37,
+      "content": "Question: மாசுபாடு மனித மக்கள்தொகையை எப்படி அதிகரிக்கிறது Evidence: Worldwide, population is seven billion. Projections are that population in the United States will reach 400 million by 2050 – a 33 percent increase in roughly 40 years’ time; the U.S. registered its 300 millionth resident in 2006. With an increase in world population has come an increase in air pollution.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "ta-IN",
+        "split": "validation",
+        "sourceFile": "validation/tamval.parquet",
+        "row": 12,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "மாசுபாடு மனித மக்கள்தொகையை எப்படி அதிகரிக்கிறது"
+      }
+    },
+    {
+      "id": "te-IN:validation:0:validation:0",
+      "label": 38,
+      "content": "Question: కార్పొరేషన్ అంటే ఏమిటి? Evidence: కార్పొరేషన్ అనేది ఒకే సంస్థగా వ్యవహరించడానికి మరియు చట్టంలో గుర్తింపు పొందిన వ్యక్తుల సమూహం లేదా కంపెనీ.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 0,
+        "field": "Answer",
+        "sourceQuery": "కార్పొరేషన్ అంటే ఏమిటి?"
+      }
+    },
+    {
+      "id": "te-IN:validation:1:validation:0",
+      "label": 39,
+      "content": "Question: రాచెల్ కార్సన్ ఎందుకు సహించాల్సిన బాధ్యతను వ్రాశారు Evidence: మనుషులు అవాంఛిత కీటకాలు మరియు కలుపు మొక్కలను తొలగించడానికి ప్రయత్నిస్తున్నప్పుడు, అతను వాస్తవానికి పర్యావరణాన్ని కలుషితం చేయడం ద్వారా మరిన్ని సమస్యలను సృష్టిస్తున్నాడని నమ్మే రేచెల్ కార్సన్ ది ఒబ్లిగేషన్ టు ఎండ్యూర్ రాశారు.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 1,
+        "field": "Answer",
+        "sourceQuery": "రాచెల్ కార్సన్ ఎందుకు సహించాల్సిన బాధ్యతను వ్రాశారు"
+      }
+    },
+    {
+      "id": "te-IN:validation:2:validation:0",
+      "label": 40,
+      "content": "Question: పొటాషియం తక్కువగా ఉండే ఆహారాల పట్టిక. Evidence: Low Sodium Low Potassium Foods List. On this page we offer a searchable collection of nutritional data on thousands of foods for healthy diet. Healthy eating is not only beneficial to weight loss, but will obviously improve your health.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 2,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "పొటాషియం తక్కువగా ఉండే ఆహారాల పట్టిక."
+      }
+    },
+    {
+      "id": "te-IN:validation:3:validation:0",
+      "label": 41,
+      "content": "Question: సరుకు నౌక యొక్క దిగువ భాగం Evidence: Take advantage of great opportunities that regularly present themselves through Shipned. Besides flat bottom tankers you will find anything from river barges to ferries, tankers, chemical oil tankers, or dry cargo vessels. Be the first to know. Be the first to know when new flat bottom tankers enter our stock. Subscribe yourself to our mailing list so that you are notified of our new arrivals. Shipned has been active as an international ship trader since 1984, offering both river and sea vessels and other maritime projects such as yachts.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 3,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "సరుకు నౌక యొక్క దిగువ భాగం"
+      }
+    },
+    {
+      "id": "te-IN:validation:4:validation:0",
+      "label": 42,
+      "content": "Question: నిజాయితీ లేదా సమగ్రత నిర్వచనం Evidence: నిజాయితీ: నిజాయితీగా ఉండటం. సమగ్రత: నిజాయితీతో పాటు లేదా దానికి అనుగుణంగా వ్యక్తి యొక్క విలువ మరియు నైతికత.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 4,
+        "field": "Answer",
+        "sourceQuery": "నిజాయితీ లేదా సమగ్రత నిర్వచనం"
+      }
+    },
+    {
+      "id": "te-IN:validation:5:validation:0",
+      "label": 43,
+      "content": "Question: లింకన్ నేలో బారోమెట్రిక్ పీడనం ఇప్పుడు ఎంత? Evidence: When the air pressure rises, it pushes the mercury higher. When the air pressure drops, so does the mercury level.. Atmospheric pressure can also be measured in millibars (mb), with a bar being roughly equivalent to one atmosphere of pressure (one atmosphere equals 1.01325 bars). One bar is equivalent to 29.6 in. Hg.A barometer reading of 30 inches (Hg) is considered normal.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 5,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "లింకన్ నేలో బారోమెట్రిక్ పీడనం ఇప్పుడు ఎంత?"
+      }
+    },
+    {
+      "id": "te-IN:validation:6:validation:0",
+      "label": 44,
+      "content": "Question: స్ట్రతర్స్ సిటీ స్కూల్ జిల్లా రాష్ట్ర సంఖ్య Evidence: SAVE SCHOOL. 1 Struthers Elementary School serves 697 students in grades PK-4. 2 Minority enrollment is 20% of the student body (majority Hispanic), which is less than the state average of 28%. 3 Struthers Elementary School operates within the Struthers City School District. School Overview The student population of 697 students has stayed relatively flat over five years.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 6,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "స్ట్రతర్స్ సిటీ స్కూల్ జిల్లా రాష్ట్ర సంఖ్య"
+      }
+    },
+    {
+      "id": "te-IN:validation:7:validation:0",
+      "label": 45,
+      "content": "Question: వైద్య మారిజువానా మైట్రోక్స్‌తో సహాయపడుతుందా? Evidence: new research from ontario canada has uncovered some interesting finds about how cannabis helps those suffering from post traumatic stress disorder these recent advancements help explain why so many veterans in the usa have abandoned their psychiatric medications and switched to cannabis",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 7,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "వైద్య మారిజువానా మైట్రోక్స్‌తో సహాయపడుతుందా?"
+      }
+    },
+    {
+      "id": "te-IN:validation:8:validation:0",
+      "label": 46,
+      "content": "Question: ఫ్రాంక్ గిఫోర్డ్ ఎంత మంది మహిళలను వివాహం చేసుకున్నాడు Evidence: People Celebrity. Celebrity. Inside Kathie Lee and Frank Gifford's 29-Year Love Story. While the legendary NFL player and sportscaster, who died on Sunday at the age of 84, had many successes in his long career, perhaps the thing he could be most proud of was his long and enduring relationship with his wife of almost 29 years.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 8,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "ఫ్రాంక్ గిఫోర్డ్ ఎంత మంది మహిళలను వివాహం చేసుకున్నాడు"
+      }
+    },
+    {
+      "id": "te-IN:validation:9:validation:0",
+      "label": 47,
+      "content": "Question: ప్రస్తుతం ట్రంప్ పరిపాలనలో ఎన్ని దర్యాప్తులు జరుగుతున్నాయి Evidence: The newspaper’s “ongoing, nationwide analysis of state and federal court records” found that “at least 75 of the 4,000-plus lawsuits involving Trump and his businesses” remained open two weeks before Election Day.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 9,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "ప్రస్తుతం ట్రంప్ పరిపాలనలో ఎన్ని దర్యాప్తులు జరుగుతున్నాయి"
+      }
+    },
+    {
+      "id": "te-IN:validation:10:validation:0",
+      "label": 48,
+      "content": "Question: వావ్‌లో అనుచరులను ఎలా సేకరించాలో మార్గదర్శి Evidence: That concludes our how to guide on obtaining three easy to obtain Followers. Be sure and keep watch for our next installment that will detail how to get four more Followers for your Garrison with little to no work! In the meantime, get to work collecting the Followers found above! To read the latest guides, news, and features you can visit our World of Warcraft Game Page.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 10,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "వావ్‌లో అనుచరులను ఎలా సేకరించాలో మార్గదర్శి"
+      }
+    },
+    {
+      "id": "te-IN:validation:11:validation:0",
+      "label": 49,
+      "content": "Question: జేల్స్ ఎంతకాలం విశ్రాంతి తీసుకుంటారు Evidence: If your monthly payment is not made, the store does reserve the right to cancel the layaway. A refund will be provided to you by the method of payment originally received. If the payment method was cash, a corporate check will be sent to you. The maximum amount of time allowed to pay off a layaway is 10 months.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 11,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "జేల్స్ ఎంతకాలం విశ్రాంతి తీసుకుంటారు"
+      }
+    },
+    {
+      "id": "te-IN:validation:12:validation:0",
+      "label": 50,
+      "content": "Question: కాలుష్యం మానవ జనాభాను ఎలా పెంచుతుంది Evidence: Worldwide, population is seven billion. Projections are that population in the United States will reach 400 million by 2050 – a 33 percent increase in roughly 40 years’ time; the U.S. registered its 300 millionth resident in 2006. With an increase in world population has come an increase in air pollution.",
+      "strategy": "validation-document",
+      "metadata": {
+        "language": "te-IN",
+        "split": "validation",
+        "sourceFile": "validation/telval.parquet",
+        "row": 12,
+        "field": "passages.English_passages[0]",
+        "sourceQuery": "కాలుష్యం మానవ జనాభాను ఎలా పెంచుతుంది"
+      }
+    }
+  ]
+}
