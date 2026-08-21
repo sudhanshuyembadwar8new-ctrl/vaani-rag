@@ -42,14 +42,23 @@ const chunk = (content, metadata, passageId) => {
   }).map((part, position) => ({ id: `${passageId}:${part.strategy}:${position}`, passageId, ...part, metadata }));
 };
 
+const isDegenerate = text => {
+  const tokenList = clean(text).split(/\s+/).filter(Boolean);
+  if (tokenList.length > 20) {
+    const unique = new Set(tokenList);
+    if (unique.size / tokenList.length < 0.35) return true;
+  }
+  return false;
+};
+
 const chunks = [];
 const compactCorpus = process.env.RAG_COMPACT_CORPUS === "1";
 for (const source of rows) {
   const data = source.data || {};
   const sourceQuery = clean(data.query || data.question || data.query_text);
   if (compactCorpus) {
-    const candidates = getStrings(data);
-    const answer = candidates.find(candidate => /(^|\.)(Answer|Eng_Answer)$/i.test(candidate.field)) ?? candidates[0];
+    const candidates = getStrings(data).filter(candidate => !isDegenerate(candidate.value));
+    const answer = candidates.find(candidate => /(^|\.)(English_passages|passages_text|Answer|Eng_Answer)/i.test(candidate.field)) ?? candidates[0];
     if (!answer) continue;
     const content = clean(`${sourceQuery ? `Question: ${sourceQuery}\n` : ""}Evidence: ${answer.value}`);
     if (words(content).length >= 18) {
@@ -65,6 +74,7 @@ for (const source of rows) {
   }
   for (const candidate of getStrings(data)) {
     if (/^(query|question|query_text)$/i.test(candidate.field)) continue;
+    if (isDegenerate(candidate.value)) continue;
     chunks.push(...chunk(candidate.value, { language: source.language, split: source.split, sourceFile: source.sourceFile, row: source.row, field: candidate.field, sourceQuery: sourceQuery || undefined }, `${source.language}:${source.split}:${source.row}`));
   }
 }
