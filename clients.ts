@@ -38,36 +38,59 @@ const configured = (key: string, label: string) => {
   return value;
 };
 
+function extractErrorMessage(body: any, fallback: string): string {
+  if (!body) return fallback;
+  if (typeof body === "string" && body.trim()) return body.trim();
+  if (typeof body.message === "string" && body.message.trim()) return body.message.trim();
+  if (typeof body.detail === "string" && body.detail.trim()) return body.detail.trim();
+  if (Array.isArray(body.detail) && body.detail.length > 0) {
+    const messages = body.detail
+      .map((d: any) => (typeof d === "string" ? d : d?.msg || d?.message || JSON.stringify(d)))
+      .filter(Boolean);
+    if (messages.length) return messages.join("; ");
+  }
+  if (typeof body.error === "string" && body.error.trim()) return body.error.trim();
+  if (body.error && typeof body.error === "object") {
+    if (typeof body.error.message === "string" && body.error.message.trim()) return body.error.message.trim();
+    return JSON.stringify(body.error);
+  }
+  return fallback;
+}
+
 export async function transcribeWithSarvam(input: { audio: Buffer; mimeType: string; languageCode: string }) {
   const key = configured("SARVAM_API_KEY", "Sarvam speech-to-text");
   return retry("Sarvam transcription", async () => {
     const form = new FormData();
-    // IMPORTANT: input.audio is a Node.js Buffer which shares a pooled ArrayBuffer
-    // under the hood. Using `bytes.buffer` directly would send the entire pool
-    // (filled with zeroes beyond the real data), causing Sarvam to reject the
-    // upload as a malformed/corrupt file (HTTP 400). We must slice the underlying
-    // ArrayBuffer to exactly the bytes that belong to this audio payload.
-    const buf = input.audio;
-    const audioBytes = buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength);
-    const ext = input.mimeType.includes("wav") ? "wav" : "webm";
-    form.append("file", new Blob([audioBytes], { type: input.mimeType }), `vaani-capture.${ext}`);
+    const cleanMime = input.mimeType.split(";")[0].trim() || "audio/webm";
+    const ext = cleanMime.includes("wav") ? "wav" : cleanMime.includes("mp3") ? "mp3" : cleanMime.includes("ogg") ? "ogg" : "webm";
+    
+    // In Node.js, create a clean standalone byte array from the Buffer
+    const audioBytes = new Uint8Array(input.audio);
+    form.append("file", new Blob([audioBytes], { type: cleanMime }), `vaani-capture.${ext}`);
     form.append("model", "saaras:v4");
     form.append("language_code", input.languageCode || "unknown");
     form.append("with_timestamps", "true");
+
     const response = await timeoutFetch("https://api.sarvam.ai/speech-to-text", {
       method: "POST",
       headers: { "api-subscription-key": key },
       body: form,
     }, 45_000);
-    const body = (await response.json().catch(() => ({}))) as {
-      transcript?: string;
-      language_code?: string | null;
-      language_probability?: number | null;
-      message?: string;
-    };
-    if (!response.ok || !body.transcript?.trim()) {
-      throw new Error(body.message || `Sarvam transcription failed (${response.status}).`);
+
+    const rawText = await response.text().catch(() => "");
+    let body: any = {};
+    try {
+      body = JSON.parse(rawText);
+    } catch {
+      body = { message: rawText };
     }
+
+    if (!response.ok || !body.transcript?.trim()) {
+      const detailedError = extractErrorMessage(body, `Sarvam transcription failed (${response.status}).`);
+      console.error(`[Sarvam STT Error ${response.status}]: ${detailedError} | Raw: ${rawText}`);
+      throw new Error(detailedError);
+    }
+
     return {
       transcript: body.transcript.trim(),
       languageCode: body.language_code ?? null,

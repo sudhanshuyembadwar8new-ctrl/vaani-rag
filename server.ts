@@ -3,6 +3,7 @@ import * as trpcExpress from "@trpc/server/adapters/express";
 import { appRouter } from "./routers";
 import path from "path";
 import dotenv from "dotenv";
+import { ensureIndexReady } from "./indexStore";
 
 dotenv.config();
 
@@ -57,6 +58,8 @@ async function startServer() {
     console.log(`📡 tRPC endpoint: http://localhost:${PORT}/api/trpc`);
     console.log(`==================================================\n`);
   });
+
+  void ensureIndexReady();
 }
 
 startServer();
