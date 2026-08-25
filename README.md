@@ -1,4 +1,4 @@
-# Vaani — Multilingual Voice-to-Answer RAG System                                                                                                                                                       
+# Vaani — Multilingual Voice-to-Answer RAG System                                                                                                                                                                            
 > **"Evidence before eloquence."** — A voice-first Retrieval-Augmented Generation (RAG) system with active grounding gates, live pipeline observability, and verifiable source provenance.                               
 
 [![Vitest](https://img.shields.io/badge/tests-passing-34D399?style=flat-square&logo=vitest)](./)                      
