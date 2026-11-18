@@ -19,7 +19,7 @@ live :- https://vaani-rag.onrender.com
 
 ---
 
-## 🎯 The Problem & Our Approach               
+## 🎯 The Problem & Our Approach                           
         
 ### The Problem
 1. **Hallucination in Voice AI:** Standard conversational voice systems attempt to answer every query even when they have no contextual grounding, producing convincing but fabricated answers.
